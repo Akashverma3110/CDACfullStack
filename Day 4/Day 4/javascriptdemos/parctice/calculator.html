@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="../js/validation.js">
+            var validate = ()=>{
+                var flag=validatenum1();
+                var flag2=validatenum2();
+                
+
+            }
+            
+        </script>
+
+    </head>
+    <body>
+        <form>
+            Number1: <input type="text" name="num1" id="num1"><br><span id="errnum1"></span>
+            Number2: <input type="text" name="num2" id="num2"><br><span id="errnum2"></span>
+            Result1: <input type="text" name="result" id="result" readonly><br>
+            <button type="button" name="btn" id="add" value="add" onclick="validate()">Addition</button>
+            <button type="button" name="btn" id="sub" value="sub" onclick="validate()">Subtraction</button>
+            <button type="button" name="btn" id="mul" value="mul" onclick="validate()">Multiply</button>
+            <button type="button" name="btn" id="div" value="div" onclick="validate()">Divison</button>
+        </form>
+        <div id="mydiv">
+
+        </div>
+    </body>
+</html>
