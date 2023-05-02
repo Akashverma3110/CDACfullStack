@@ -3,7 +3,7 @@
         <style>
             #mydiv1{
                 margin: 10px;
-                border: 2px solid black;
+               
             }
             #mytable{
                 width:100%;
@@ -21,7 +21,7 @@
 
             <div id="mydiv1">
                 <form>
-                    <table border="2" id="mytable">
+                    <table  id="mytable">
                         <tr>
                             <td>What kind of Internet Connection do you have?<br>(Select One)</td>
                             <td><select name="Icon" id="Icon">
@@ -30,6 +30,84 @@
                                 <option value="Hscable">High Seed Cable</option>
                                 <option value="other">Other</option>
                             </select></td>
+                        </tr>
+                        <tr>
+                            <td>What kind of computer do you use most at home?</td>
+                            <td><input type="radio" id="desk" name="com">
+                                <label for="desk">Desktop</label>
+                                <input type="radio" id="lap" name="com">
+                                <label for="lap">Laptop</label>
+
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>How would you descide your main reasion for using the Internet?</td>
+                            <td>
+                                <input type="radio" name="internet" id="work">
+                                <label for="work">To do work related activities</label><br>
+                                <input type="radio" name="internet" id="school">
+                                <label for="school">To do school related activities</label><br>
+                                <input type="radio" name="internet" id="enter">
+                                <label for="enter">For entertainment purpose</label><br>
+                                <input type="radio" name="internet" id="other">
+                                <label for="other">Other activities</label>
+                                
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <fieldset>
+                                    <legend>Type of site visited</legend>
+                                    <pre>What type of web sites do tou access most often?<br>Check all that apply:</pre><br>
+                                    <input type="checkbox" name="site" id="self"><label for="self">Self Improvement</label><br>
+                                    <input type="checkbox" name="site" id="entertainment"><label for="entertainment">Entertainment</label><br>
+                                    <input type="checkbox" name="site" id="news"><label for="news">News and Sports</label><br>
+                                    <input type="checkbox" name="site" id="ref"><label for="ref">Reference</label><br>
+                                    <input type="checkbox" name="site" id="mail"><label for="mail">Email</label><br>
+                                    
+                                </fieldset>
+                            </td>
+                            <td>
+                                <fieldset>
+                                    <legend>Time spent using Internet</legend>
+                                    <pre>During an average week, how long do you spend online?</pre><br>
+                                    <input type="checkbox" name="time" id="self"><label for="self">0-3 Hours</label><br>
+                                    <input type="checkbox" name="time" id="entertainment"><label for="entertainment">4-6 Hours</label><br>
+                                    <input type="checkbox" name="time" id="news"><label for="news">7-10 Hours</label><br>
+                                    <input type="checkbox" name="time" id="ref"><label for="ref">11-14 Hours</label><br>
+                                    <input type="checkbox" name="time" id="mail"><label for="mail">15+ Hours</label><br>
+                                    
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <pre>Please comment on your opinions concerning Internet privacy and safety.</pre>
+                                <textarea name="opin" id="opin" cols="130" rows="10"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            
+                            <td>
+                                First Name: <input type="text" name="Fname" id="Fname">
+                            </td>
+                            <td>
+                                Last Name: <input type="text" name="Lname" id="Lname">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Age: <input type="number" name="age" id="age">
+                            </td>
+                            <td>
+                                Zip Code: <input type="number" name="zip" id="zip">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="float:right;"><button type="submit" name="btn" id="btn">Click to Submit</button></td>
+                            <td><button type="reset" name="btn1" id="btn1">Clear Form</button></td>
                         </tr>
                         
 
